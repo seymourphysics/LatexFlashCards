@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/equation_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+
+        <WebView
+            android:id="@+id/scrollwebview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="31" />
+
+        <TextView
+            android:id="@+id/notesfrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:text="This equation is maxwells... \n user adds stuff here" />
+    </LinearLayout>
+</FrameLayout>
